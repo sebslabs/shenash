@@ -44,8 +44,8 @@ export const STORE_INFO = {
   whatsapp: "+18004567890",
   whatsappDisplay: "+1 (800) 456-7890",
   email: "hello@bilindufurniture.com",
-  address: "142 Grand Heritage Boulevard, Design District, NY 10012",
-  googleMapsUrl: "https://maps.google.com/?q=142+Grand+Heritage+Boulevard+NY+10012",
+  address: "56/12 Sri Premarathna Road, Moratumulla, Moratuwa",
+  googleMapsUrl: "https://maps.google.com/?q=56/12+Sri+Premarathna+Road+Moratumulla+Moratuwa",
   hours: {
     weekdays: "Monday – Saturday: 9:00 AM – 7:00 PM",
     weekend: "Sunday: 10:00 AM – 5:00 PM",

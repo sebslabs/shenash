@@ -70,7 +70,7 @@ export default function ContactSection() {
                   {STORE_INFO.name}
                 </h3>
                 <p className="text-[10px] font-semibold tracking-[0.12em] text-[#E8DFD3] uppercase mt-0.5">
-                  DESIGN DISTRICT SHOWROOM
+                  MORATUWA SHOWROOM
                 </p>
               </div>
 
@@ -303,8 +303,8 @@ export default function ContactSection() {
           <div className="relative w-full h-[350px] sm:h-[400px] rounded-[4px] overflow-hidden border border-[rgba(40,30,20,0.12)] shadow-sm bg-[#EFECE6]">
             {/* Embedded Google Maps iframe */}
             <iframe
-              title="Maison & Living Showroom Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2177261899017!2d-73.998!3d40.725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598f828a2a8b%3A0x6e8f4bf0e4567890!2sSoHo%2C%20New%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus"
+              title="Bilindu Furniture Showroom Location"
+              src="https://maps.google.com/maps?q=56/12+Sri+Premarathna+Road,+Moratumulla,+Moratuwa&t=&z=15&ie=UTF8&iwloc=&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0, filter: "contrast(0.95) saturate(0.85)" }}
@@ -321,7 +321,7 @@ export default function ContactSection() {
                 <h4 className="font-heading text-[18px] font-medium text-white">{STORE_INFO.name}</h4>
               </div>
               <p className="text-[10px] text-[#E8DFD3] uppercase tracking-[0.12em] font-semibold">
-                Design District Showroom
+                Moratuwa Showroom
               </p>
               <p className="text-[13px] text-white/80 leading-relaxed font-normal">
                 {STORE_INFO.address}
