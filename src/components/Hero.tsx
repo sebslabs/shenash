@@ -59,8 +59,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.18 }}
             className="font-heading text-[38px] sm:text-[46px] lg:text-[56px] font-semibold leading-[1.05] tracking-[-0.03em] text-[#FAF8F5]"
           >
-            Bilindu Furniture <br />
-            for Every Space.
+            Bilindu Furniture
           </motion.h1>
 
           {/* Supporting Description (15px / 400) */}
