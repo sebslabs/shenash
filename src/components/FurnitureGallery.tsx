@@ -68,24 +68,22 @@ export default function FurnitureGallery() {
         <motion.div layout className="grid grid-cols-1 lg:grid-cols-12 gap-5">
           <AnimatePresence mode="wait">
             {filteredItems.map((item, index) => {
-              const isFullSet = activeFilter === "All" && filteredItems.length === 6;
-
+              // Asymmetric composition layout logic on desktop
+              // Alternates between large focal pieces (col-span-8) and compact pairs (col-span-4)
               let colSpanClass = "lg:col-span-6";
               let heightClass = "h-[380px] sm:h-[440px]";
 
-              if (isFullSet) {
-                if (index === 0) {
+              if (activeFilter === "All") {
+                if (index === 0 || index === 5) {
                   colSpanClass = "lg:col-span-8";
                   heightClass = "h-[400px] lg:h-[640px]";
-                } else if (index === 1 || index === 2) {
+                } else if (index === 1 || index === 2 || index === 3 || index === 4) {
                   colSpanClass = "lg:col-span-4";
                   heightClass = "h-[300px] lg:h-[310px]";
-                } else if (index === 3 || index === 4) {
-                  colSpanClass = "lg:col-span-4";
-                  heightClass = "h-[300px] lg:h-[310px]";
-                } else if (index === 5) {
-                  colSpanClass = "lg:col-span-8";
-                  heightClass = "h-[400px] lg:h-[640px]";
+                } else {
+                  // Items 6, 7 and beyond: balanced 6-col cards
+                  colSpanClass = "lg:col-span-6";
+                  heightClass = "h-[380px] lg:h-[450px]";
                 }
               }
 
