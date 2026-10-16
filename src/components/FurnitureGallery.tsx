@@ -14,6 +14,7 @@ export default function FurnitureGallery() {
     "All",
     "Living Rooms",
     "Sofas & Armchairs",
+    "Chairs",
     "Dining Spaces",
     "Bedrooms",
     "Office",
@@ -68,22 +69,21 @@ export default function FurnitureGallery() {
         <motion.div layout className="grid grid-cols-1 lg:grid-cols-12 gap-5">
           <AnimatePresence mode="wait">
             {filteredItems.map((item, index) => {
-              // Asymmetric composition layout logic on desktop
-              // Alternates between large focal pieces (col-span-8) and compact pairs (col-span-4)
+              // Dynamic asymmetric editorial layout on desktop
+              // Alternates focal hero cards with 4-col and 6-col balanced architectural cards
               let colSpanClass = "lg:col-span-6";
               let heightClass = "h-[380px] sm:h-[440px]";
 
               if (activeFilter === "All") {
-                if (index === 0 || index === 5) {
+                if (index === 0 || index === 7) {
                   colSpanClass = "lg:col-span-8";
-                  heightClass = "h-[400px] lg:h-[640px]";
-                } else if (index === 1 || index === 2 || index === 3 || index === 4) {
+                  heightClass = "h-[400px] lg:h-[620px]";
+                } else if (index === 1 || index === 2 || index === 8 || index === 9) {
                   colSpanClass = "lg:col-span-4";
-                  heightClass = "h-[300px] lg:h-[310px]";
+                  heightClass = "h-[320px] lg:h-[300px]";
                 } else {
-                  // Items 6, 7 and beyond: balanced 6-col cards
                   colSpanClass = "lg:col-span-6";
-                  heightClass = "h-[380px] lg:h-[450px]";
+                  heightClass = "h-[380px] lg:h-[460px]";
                 }
               }
 
