@@ -234,7 +234,7 @@ export default function ContactSection() {
                       <option>Living Room</option>
                       <option>Bedroom</option>
                       <option>Dining Room</option>
-                      <option>Office Furniture</option>
+                      <option>Wardrobes</option>
                       <option>Chairs</option>
                       <option>Tables</option>
                       <option>Custom Furniture</option>
@@ -304,13 +304,13 @@ export default function ContactSection() {
             {/* Embedded Google Maps iframe */}
             <iframe
               title="Bilindu Furniture Showroom Location"
-              src="https://maps.google.com/maps?q=56/12+Sri+Premarathna+Road,+Moratumulla,+Moratuwa&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4271.395305642789!2d79.89162727532643!3d6.785195693211898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae24582953bcea1%3A0xe38547079145a636!2sBilindu%20Furniture!5e1!3m2!1sen!2slk!4v1793432067285!5m2!1sen!2slk"
               width="100%"
               height="100%"
-              style={{ border: 0, filter: "contrast(0.95) saturate(0.85)" }}
-              allowFullScreen={false}
+              style={{ border: 0 }}
+              allowFullScreen={true}
               loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
+              referrerPolicy="strict-origin-when-cross-origin"
               className="w-full h-full"
             />
 

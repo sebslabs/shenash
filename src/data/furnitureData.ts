@@ -34,6 +34,9 @@ export interface GalleryItem {
   category: string;
   image: string;
   span: string; // Tailwind grid span helper
+  width: number;
+  height: number;
+  aspectRatio?: string;
 }
 
 export const STORE_INFO = {
@@ -43,9 +46,10 @@ export const STORE_INFO = {
   phoneDisplay: "+94 77 527 3978",
   whatsapp: "94775273978",
   whatsappDisplay: "+94 77 527 3978",
-  email: "hello@bilindufurniture.com",
+  email: "info@bilindufurniture.com",
   address: "56/12 Sri Premarathna Road, Moratumulla, Moratuwa",
-  googleMapsUrl: "https://maps.google.com/?q=56/12+Sri+Premarathna+Road+Moratumulla+Moratuwa",
+  googleMapsUrl: "https://www.google.com/maps/place/Bilindu+Furniture/@6.7851957,79.8916273,17z",
+  facebookUrl: "https://www.facebook.com/profile.php?id=61555780343650",
   hours: {
     weekdays: "Monday – Saturday: 9:00 AM – 7:00 PM",
     weekend: "Sunday: 10:00 AM – 5:00 PM",
@@ -69,9 +73,9 @@ export const CATEGORIES: Category[] = [
     name: "Bedroom",
     itemCount: "28 Signature Items",
     badgeCount: "28 Pieces",
-    subtitle: "Bedroom Suite",
-    description: "X-accent dressers, spotlight wardrobes, and full-length mirrors.",
-    image: "/images/dresser_x_accent.jpg",
+    subtitle: "Bedroom Suite & Teak Beds",
+    description: "Solid hardwood bed suites, fluted upholstered headboards, and bedside tables.",
+    image: "/images/bed_linen_tufted_hardwood.jpg",
     gridSpan: "lg:col-span-5",
     heightClass: "h-[450px] sm:h-[540px]",
   },
@@ -87,12 +91,12 @@ export const CATEGORIES: Category[] = [
     heightClass: "h-[450px] sm:h-[540px]",
   },
   {
-    id: "office-furniture",
-    name: "Office Furniture",
+    id: "wardrobes",
+    name: "Wardrobes",
     itemCount: "20 Signature Items",
     badgeCount: "20 Pieces",
-    subtitle: "Workplace & Executive Office",
-    description: "Spotlight wardrobes, slatted storage, and architectural desks.",
+    subtitle: "Wardrobes & Custom Storage",
+    description: "Spotlight wardrobes, slatted storage, and handcrafted closets.",
     image: "/images/wardrobe_spotlights.jpg",
     gridSpan: "lg:col-span-7",
     heightClass: "h-[450px] sm:h-[540px]",
@@ -284,6 +288,9 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     category: "Living Rooms",
     image: "/images/sofa_set_colorful.jpg",
     span: "col-span-1 md:col-span-2 row-span-2",
+    width: 1024,
+    height: 768,
+    aspectRatio: "4/3",
   },
   {
     id: "gal-2",
@@ -291,6 +298,9 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     category: "Dining Spaces",
     image: "/images/dining_table_carved.jpg",
     span: "col-span-1 row-span-1",
+    width: 1024,
+    height: 812,
+    aspectRatio: "4/3",
   },
   {
     id: "gal-3",
@@ -298,6 +308,9 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     category: "Dining Spaces",
     image: "/images/dining_table_solid.jpg",
     span: "col-span-1 row-span-1",
+    width: 1024,
+    height: 682,
+    aspectRatio: "3/2",
   },
   {
     id: "gal-4",
@@ -305,6 +318,9 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     category: "Bedrooms",
     image: "/images/wardrobe_spotlights.jpg",
     span: "col-span-1 row-span-1",
+    width: 768,
+    height: 1024,
+    aspectRatio: "3/4",
   },
   {
     id: "gal-5",
@@ -312,6 +328,9 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     category: "Bedrooms",
     image: "/images/dresser_x_accent.jpg",
     span: "col-span-1 row-span-1",
+    width: 768,
+    height: 1024,
+    aspectRatio: "3/4",
   },
   {
     id: "gal-6",
@@ -319,6 +338,9 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     category: "Sofas & Armchairs",
     image: "/images/sofa_set_striped.jpg",
     span: "col-span-1 row-span-1",
+    width: 1024,
+    height: 768,
+    aspectRatio: "4/3",
   },
   {
     id: "gal-7",
@@ -326,6 +348,9 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     category: "Office",
     image: "/images/showcase_credenza.jpg",
     span: "col-span-1 md:col-span-2 row-span-1",
+    width: 768,
+    height: 1024,
+    aspectRatio: "3/4",
   },
   {
     id: "gal-8",
@@ -333,6 +358,9 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     category: "Tables",
     image: "/images/dressing_table_1.jpg",
     span: "col-span-1 row-span-1",
+    width: 768,
+    height: 1024,
+    aspectRatio: "3/4",
   },
   {
     id: "gal-9",
@@ -340,6 +368,9 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     category: "Chairs",
     image: "/images/chair_slatted_armchair.jpg",
     span: "col-span-1 row-span-1",
+    width: 768,
+    height: 1024,
+    aspectRatio: "3/4",
   },
   {
     id: "gal-10",
@@ -347,6 +378,9 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     category: "Chairs",
     image: "/images/chair_barrel_tub.jpg",
     span: "col-span-1 row-span-1",
+    width: 768,
+    height: 1024,
+    aspectRatio: "3/4",
   },
   {
     id: "gal-11",
@@ -354,6 +388,9 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     category: "Chairs",
     image: "/images/chair_modern_minimal.jpg",
     span: "col-span-1 row-span-1",
+    width: 768,
+    height: 1024,
+    aspectRatio: "3/4",
   },
   {
     id: "gal-12",
@@ -361,6 +398,9 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     category: "Chairs",
     image: "/images/chair_adirondack_teak.jpg",
     span: "col-span-1 row-span-1",
+    width: 768,
+    height: 1024,
+    aspectRatio: "3/4",
   },
   {
     id: "gal-13",
@@ -368,6 +408,59 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     category: "Chairs",
     image: "/images/chair_highback_royal.jpg",
     span: "col-span-1 row-span-1",
+    width: 769,
+    height: 1024,
+    aspectRatio: "3/4",
+  },
+  {
+    id: "gal-14",
+    title: "Handcrafted Teak Slat-Arm Sofa Suite & Coffee Table",
+    category: "Living Rooms",
+    image: "/images/sofa_set_slatted_arm_beige.jpg",
+    span: "col-span-1 row-span-1",
+    width: 1024,
+    height: 682,
+    aspectRatio: "3/2",
+  },
+  {
+    id: "gal-15",
+    title: "Royal Blue Upholstered Fluted Teak Bed Suite",
+    category: "Bedrooms",
+    image: "/images/bed_blue_velvet_tufted.jpg",
+    span: "col-span-1 row-span-1",
+    width: 1024,
+    height: 767,
+    aspectRatio: "4/3",
+  },
+  {
+    id: "gal-16",
+    title: "Handcrafted Solid Teak Bed with Oatmeal Fluted Headboard",
+    category: "Bedrooms",
+    image: "/images/bed_linen_tufted_hardwood.jpg",
+    span: "col-span-1 row-span-1",
+    width: 1024,
+    height: 767,
+    aspectRatio: "4/3",
+  },
+  {
+    id: "gal-17",
+    title: "Artisanal Slatted Teak Living Suite with Bolster Pillows",
+    category: "Living Rooms",
+    image: "/images/sofa_set_vertical_slat_beige.jpg",
+    span: "col-span-1 row-span-1",
+    width: 1024,
+    height: 682,
+    aspectRatio: "3/2",
+  },
+  {
+    id: "gal-18",
+    title: "Heritage Teak Lounge Suite with Sage Green Cushions",
+    category: "Living Rooms",
+    image: "/images/sofa_set_sage_green_cushions.jpg",
+    span: "col-span-1 row-span-1",
+    width: 1024,
+    height: 682,
+    aspectRatio: "3/2",
   },
 ];
 

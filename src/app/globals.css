@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
 @layer base {
   :root {
-    --font-manrope: var(--font-manrope), -apple-system, BlinkMacSystemFont, sans-serif;
-    --font-inter: var(--font-inter), -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-manrope: var(--font-manrope), "Manrope", -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-inter: var(--font-inter), "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   }
 
   body {

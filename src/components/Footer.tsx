@@ -29,7 +29,7 @@ export default function Footer() {
     { name: "Living Room", href: "#collections" },
     { name: "Bedroom", href: "#collections" },
     { name: "Dining Room", href: "#collections" },
-    { name: "Office Furniture", href: "#collections" },
+    { name: "Wardrobes", href: "#collections" },
     { name: "Chairs", href: "#collections" },
     { name: "Tables", href: "#collections" },
   ];
@@ -99,7 +99,9 @@ export default function Footer() {
               </svg>
             </a>
             <a
-              href="#"
+              href={STORE_INFO.facebookUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Facebook"
               className="text-white/80 hover:text-white transform hover:-translate-y-0.5 transition-all duration-250"
             >
